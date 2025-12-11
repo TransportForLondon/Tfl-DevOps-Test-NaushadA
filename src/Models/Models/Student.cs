@@ -16,7 +16,7 @@ public class Student
             var totalCredits = 0;
             foreach(var enrollment in Enrollments)
             {
-                totalCredits = (int)enrollment.Course.Credits;
+                totalCredits =  totalCredits + (int)enrollment.Course.Credits;
             }
 
             return totalCredits;
